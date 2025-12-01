@@ -17,7 +17,7 @@ class SortingVisualizer:
 
 
     def generate_data(self):
-        self.data = [random.randint(10, 380) for _ in range(50)]
+        self.data = [random.randint(10, 300) for _ in range(50)]
         self.draw_data(self.data)
         self.time_label.config(text="Time: --")
 
