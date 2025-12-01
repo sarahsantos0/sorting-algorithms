@@ -1,7 +1,7 @@
 ## 📊 Sorting Algorithms Visualizer
 
 Esse projeto foi desenvolvido como parte da disciplina de algoritmos e estrutura de dados da minha faculdade. 
-Ele permite visualizar o funcionamento de algoritmos de ordenação em tempo real e de forma animada.
+Ele permite visualizar o funcionamento de algoritmos de ordenação, nesse caso o bubble sort, em tempo real e de forma animada.
 
 
 ## 🚀 Funcionalidades
@@ -51,4 +51,5 @@ sorting-algorithms-visualizer/
 
 **Sarah Santos**  
 - [LinkedIn](https://www.linkedin.com/in/sarah-santos-1977b5279/) 🌐
+
 
