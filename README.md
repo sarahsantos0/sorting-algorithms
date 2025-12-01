@@ -3,6 +3,7 @@
 Esse projeto foi desenvolvido como parte da disciplina de algoritmos e estrutura de dados da minha faculdade. 
 Ele permite visualizar o funcionamento de algoritmos de ordenação em tempo real e de forma animada.
 
+
 ## 🚀 Funcionalidades
 
 - Visualização gráfica dos algoritmos
@@ -10,7 +11,9 @@ Ele permite visualizar o funcionamento de algoritmos de ordenação em tempo rea
 - Cálculo de tempo real do algoritmo (execução pura, sem animação)
 - Cálculo do tempo da animação (execução visual com delays e redraw)
 
+
 ## 🛠️ Tecnologias Utilizadas
+
 | Tecnologia   | Função                       |
 | ------------ | ---------------------------- |
 | **Python 3** | Linguagem principal          |
@@ -20,6 +23,7 @@ Ele permite visualizar o funcionamento de algoritmos de ordenação em tempo rea
 
 
 ## 📁 Estrutura do Projeto
+
 ```markdown
 sorting-algorithms-visualizer/
 │
@@ -41,3 +45,10 @@ sorting-algorithms-visualizer/
 - O usuário visualiza cada etapa do algoritmo enquanto os elementos são comparados e trocados.
 - O tempo de execução real e o de animação são exibidos na parte inferior da tela.
 - O programa utiliza ```time.perf_counter()``` para calcular a duração total da execução do algoritmo, permitindo análises comparativas futuras.
+
+
+## Desenvolvedor 👩‍💻
+
+**Sarah Santos**  
+- [LinkedIn](https://www.linkedin.com/in/sarah-santos-1977b5279/) 🌐
+
