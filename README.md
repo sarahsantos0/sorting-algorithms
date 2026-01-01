@@ -29,6 +29,7 @@ sorting-algorithms-visualizer/
 │
 ├── algorithms/
 │   └── bubble.py        # Implementação do algoritmo Bubble Sort
+|   └── selection.py     # Implementação do algoritmo Selection Sort
 │
 ├── utils/
 │   └── timer.py         # Utilitário para medição de tempo
@@ -51,5 +52,6 @@ sorting-algorithms-visualizer/
 
 **Sarah Santos**  
 - [LinkedIn](https://www.linkedin.com/in/sarah-santos-1977b5279/) 🌐
+
 
 
