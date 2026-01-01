@@ -2,8 +2,6 @@
 # Algoritmos criados até o momento: Bubble Sort
 # Caso queira contribuir, fique à vontade para abrir um pull request.
 
-
-import time
 from visualizer import SortingVisualizer
 import tkinter as tk
 
