@@ -1,7 +1,8 @@
 import tkinter as tk
 import random
 import time
-
+from algorithms.bubble import bubble_sort as bubble_sort_module
+from algorithms.selection import selection_sort as selection_sort_module
 class SortingVisualizer:
     def __init__(self, root):
         self.root = root
@@ -11,9 +12,17 @@ class SortingVisualizer:
         self.canvas.pack()
         self.time_label = tk.Label(self.root, text="Tempo: --")
         self.time_label.pack()
+
+        self.sort_button = tk.Button(self.root, text="Start Bubble Sort", command=self.bubble_sort)
+        self.sort_button.pack()
+
+        
+        self.select_button = tk.Button(self.root, text="Start Selection Sort", command=self.selection_sort)
+        self.select_button.pack()
+
         self.data = []
         self.generate_data()
-        self.root.after(100, self.bubble_sort)
+        ##self.root.after(100, self.bubble_sort)
 
 
     def generate_data(self):
@@ -38,9 +47,8 @@ class SortingVisualizer:
         data = self.data.copy()
 
         # Tempo real (sem animação)
-        from algorithms.bubble import bubble_sort as pure_bubble_sort
         start_real = time.perf_counter()
-        pure_bubble_sort(self.data.copy())
+        bubble_sort_module(self.data.copy())
         end_real = time.perf_counter()
         real_time = end_real - start_real
 
@@ -52,6 +60,34 @@ class SortingVisualizer:
                 if data[j] > data[j + 1]:
                     data[j], data[j + 1] = data[j + 1], data[j]
                     self.draw_data(data, color="blue")
+        end_anim = time.perf_counter()
+        anim_time = end_anim - start_anim
+
+        self.draw_data(data, color="blue")
+
+        self.time_label.config(
+            text=f"Real time: {real_time:.4f} s | Animation time: {anim_time:.4f} s"
+        )
+
+    def selection_sort(self):
+        data = self.data.copy()
+
+        # Tempo real (sem animação)
+        start_real = time.perf_counter()
+        selection_sort_module(self.data.copy())
+        end_real = time.perf_counter()
+        real_time = end_real - start_real
+
+        # Tempo animado (visual)
+        start_anim = time.perf_counter()
+        n = len(data)
+        for i in range(n):
+            min_index = i
+            for j in range(i + 1, n):
+                if data[j] < data[min_index]:
+                    min_index = j
+            data[i], data[min_index] = data[min_index], data[i]
+            self.draw_data(data, color="blue")
         end_anim = time.perf_counter()
         anim_time = end_anim - start_anim
 
